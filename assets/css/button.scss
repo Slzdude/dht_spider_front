@@ -1,0 +1,46 @@
+.button-red {
+  border: 1px solid #f32779;
+  background-color: #f32779;
+  color: white;
+  padding: 1rem 1.8rem;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid lighten(#f32779, 10%);
+    background-color: lighten(#f32779, 10%);
+  }
+
+  &:active {
+    border: 1px solid darken(#f32779, 10%);
+    background-color: darken(#f32779, 10%);
+  }
+}
+
+.button-white {
+  border: 1px solid #f32779;
+  background-color: white;
+  color: #f32779;
+  padding: 1rem 1.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f32779;
+    color: white;
+  }
+
+  &:active {
+    background-color: darken(#f32779, 10%);
+    color: white;
+  }
+}
+
+.button-red-small {
+  @extend .button-red;
+  padding: 0.5rem 1rem;
+}
+
+.button-white-mini {
+  @extend .button-white;
+  border-radius: 0.2rem;
+  padding: 0.2rem .5rem;
+}
