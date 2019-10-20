@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US" {{ HTML_ATTRS }}>
+
+  <head>{{ HEAD }}
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126323837-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-126323837-1');
+    </script>
+  </head>
+
+  <body {{ BODY_ATTRS }}>{{ APP }}<script>
+      (function () {
+        var c = document.createElement("script");
+        var b = window.location.protocol.split(":")[0];
+        if (b === "https") {
+          c.src = "https://zz.bdstatic.com/linksubmit/push.js"
+        } else {
+          c.src = "http://push.zhanzhang.baidu.com/push.js"
+        }
+        var a = document.getElementsByTagName("script")[0];
+        a.parentNode.insertBefore(c, a)
+      })();
+    </script>
+  </body>
+
+</html>
